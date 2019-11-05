@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 08:57:52 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzM7MjAxOS0xMC0yOTswODozNjo0NSBBTTsyMjA5"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzM7MjAxOS0xMC0yOTswODo1Nzo1MiBBTTsxOzIzMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Integer" array="False" size=""/>
+            <declare name="Area" type="String" array="False" size=""/>
+            <output expression="&quot;Please enter the Radius&quot;" newline="True"/>
+            <input variable="Radius"/>
+            <assign variable="Area" expression="Tofixed(pi *(radius *2),2)"/>
+            <output expression="&quot;The Area of the Circle with the Radius &quot;&amp;Radius &amp;&quot; is &quot;&amp;area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
