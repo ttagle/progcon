@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-03 08:12:50 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzM7MjAxOS0xMi0wMzswNzo0Mzo0NiBBTTsyMjAx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzM7MjAxOS0xMi0wMzswODoxMjo1MCBBTTs3OzIzMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number1" type="Integer" array="False" size=""/>
+            <declare name="Number2" type="Integer" array="False" size=""/>
+            <declare name="Number3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Welcome&quot;" newline="True"/>
+            <output expression="&quot;Please enter at most three (3) numbers of your choice, separately&quot;" newline="True"/>
+            <output expression="&quot;And let's see which one is the least number&quot;" newline="True"/>
+            <input variable="Number1"/>
+            <input variable="Number2"/>
+            <input variable="Number3"/>
+            <if expression="Number1 &lt; Number2">
+                <then>
+                    <output expression="Number1" newline="True"/>
+                    <output expression="&quot;This is the least number  you have inputted&quot;" newline="True"/>
+                    <output expression="&quot;Thank you for using my app&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Number2 &lt; Number3">
+                        <then>
+                            <output expression="Number2" newline="True"/>
+                            <output expression="&quot;This is the least number  you have inputted&quot;" newline="True"/>
+                            <output expression="&quot;Thank you for using my app&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Number3 &lt; Number1">
+                                <then>
+                                    <output expression="Number3" newline="True"/>
+                                    <output expression="&quot;This is the least number  you have inputted&quot;" newline="True"/>
+                                    <output expression="&quot;Thank you for using my app&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
